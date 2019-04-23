@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+.container{
+    max-width: 1280px;
+    outline: 1px solid red;
+    padding: 0 4.5rem;
+}
+// __________ LIST ______________
+
+.list{
+    list-style-type: none;
+    margin-bottom: 0rem;
+    line-height: 1rem;
+}
+// __________ TEXT ______________
+
+// .text--small{
+//     font-size: 0.7rem;
+// }
+// __________ LINK ______________
+.link{    
+    color:  #97bae6;   
+    &:hover{
+        color: #fff;
+    }
+}
+
+.active{
+    color: #fff;
+    background: #2F52AD;
+}
+
+.icon--sm>svg{
+    width: 16px;
+    height: 16px;
+}
+
+// __________ SVG ______________
+svg {
+    fill: currentColor;
+}

@@ -47,43 +47,7 @@
                 background: #fff;            }
         }
 
-    }
-
-    .button--line-blue{
-        border: 1px solid #007bff;
-        color: #007bff;
-        background: #fff;
-        font-size: 1.1rem;
-        padding: .4rem 2.8rem 0.4rem 1rem;
-        &::after{
-            content:'';
-            position: absolute;
-            top: 45%;
-            right: 6%;
-            width: 10px;
-            height: 2px;
-            transform: rotate(-45deg);
-            background: #007bff;
-        }
-        &::before{
-            content:'';
-            position: absolute;
-            top: 45%;
-            right: 10%;
-            width: 10px;
-            height: 2px;
-            transform: rotate(45deg);
-            background: #007bff;
-        }
-        // &:hover{
-        //   background: #007bff;
-        //   color: #fff;
-        // }
-        &:focus{
-            box-shadow: 1px -1px 4px 1px rgba(0, 123, 255, 0.3);
-
-        }
-    }
+    }    
 
     &-settings-list{
         margin-top: .85rem;
@@ -117,5 +81,70 @@
         }
         
     }
+    &-cards{
+        &-item{
+            min-height: 280px;
+        }
+        &-item:nth-child(n+3){
+            margin-top: 2.6rem;
+        }
+        &-item__descr{
+            padding: 1.4rem 2.5rem;
+            // padding: 1.5rem 1.8rem 1.4rem 2.5rem;
+
+        }
+        &-item__media{
+            margin-bottom: 3rem;
+        }
+        &-item--lg{
+            flex-basis: 66%
+        }
+        &-item--sm{
+            flex-basis: 32%
+        }
+    }
+
+    .button--line-blue{
+        border: 1px solid #007bff;
+        color: #007bff;
+        background: #fff;
+        font-size: 1.1rem;
+        padding: .4rem 2.8rem 0.4rem 1rem;
+        &::after{
+            content:'';
+            position: absolute;
+            top: 45%;
+            right: 6%;
+            width: 10px;
+            height: 2px;
+            transform: rotate(-45deg);
+            background: #007bff;
+        }
+        &::before{
+            content:'';
+            position: absolute;
+            top: 45%;
+            right: 10%;
+            width: 10px;
+            height: 2px;
+            transform: rotate(45deg);
+            background: #007bff;
+        }
+       
+        &:focus{
+            box-shadow: 1px -1px 4px 1px rgba(0, 123, 255, 0.3);
+
+        }
+    }
+
+    .btn-light-green{
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: .6rem 1.5rem;
+        word-spacing: 4px;
+        text-transform: initial;
+        margin: 0;
+    }
+    
     
 }

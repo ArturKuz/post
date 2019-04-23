@@ -1,4 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+// __________ NORMOLIZE _________
+body{
+//  font-family: 'Courier New', Courier, monospace;
+}
+
+// __________ GRID ______________
 .container{
     max-width: 1280px;
     outline: 1px solid red;
@@ -14,9 +19,16 @@
 }
 // __________ TEXT ______________
 
-// .text--small{
-//     font-size: 0.7rem;
-// }
+.t--title-sm{
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.t--sm{
+    font-size: .85rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
 // __________ LINK ______________
 .link{    
     color:  #97bae6;   

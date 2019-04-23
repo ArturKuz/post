@@ -1,3 +1,38 @@
-<section>
-  social-tools-page works!
+<section class="page row">
+
+  <div class="col-lg-7 pl-0">
+    <h1 class="page__title">Social Tools</h1>
+  </div>
+
+  <div class="col-lg-5 d-flex flex-column align-content-end pt-4">
+    <div class="page-drop-menu text-right" [ngClass]="{'open': isShowDropMenu}">
+      <button class=" button button--line-blue position-relative" (click)="showDropMenu()">Current profile</button>
+      <ul class="page-drop-menu__list list" >
+        <li class="page-drop-menu__list-item" >
+          <a class="page-drop-menu__list-link" routerLink="/"> Profile name first created</a>
+        </li>
+        <li class="page-drop-menu__list-item">
+          <a class="page-drop-menu__list-link" routerLink="/"> Profile name second</a>
+        </li>
+        <li class="page-drop-menu__list-item">
+          <a class="page-drop-menu__list-link" routerLink="/"> Profile name last</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="page-settings-list list d-flex justify-content-end">
+      <li class="page-settings-list__item position-relative">
+        <a class="page-settings-list__link" routerLink="/">
+          <span class="icon--sm" [inlineSVG]="'/assets/svg/settings.svg'"></span>
+           Show code installation instructions 
+        </a>
+      </li>
+      <li class="page-settings-list__item">
+        <a class="page-settings-list__link" routerLink="/">
+          <span class="icon--sm" [inlineSVG]="'/assets/svg/information.svg'"></span>
+          Help
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>

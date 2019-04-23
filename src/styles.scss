@@ -10,6 +10,7 @@
     list-style-type: none;
     margin-bottom: 0rem;
     line-height: 1rem;
+    padding: 0;
 }
 // __________ TEXT ______________
 
@@ -37,4 +38,21 @@
 // __________ SVG ______________
 svg {
     fill: currentColor;
+}
+// __________ BTN ______________
+.button{
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+
+    &:hover,
+    &:active,
+    &:focus{
+        outline: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
 }

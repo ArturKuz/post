@@ -1,0 +1,121 @@
+.page{
+    
+    &__title{
+        font-size: 2.8rem;
+        font-weight: 500;
+        padding: 3.8rem .6rem;
+        letter-spacing: 1px;
+    }
+    &-drop-menu{    
+          margin-top: .3rem;
+        &__list{
+            position: absolute;
+            background: #fff;
+            border: 1px solid #007bff;
+            height: 0;
+            display: none;
+            bottom: -28px;
+            right: 15px;
+            z-index: 3;
+            &-link{
+                display: block;
+                padding: 1rem 1.8rem;
+            }
+            &-link:hover{
+                background:#007bff;
+                color: #fff;
+            }
+        }
+        
+    }
+    &-drop-menu.open{
+
+        .page-drop-menu__list{
+            display: block;
+            height: auto;
+
+        }
+        .button--line-blue{
+            color: #fff;
+            background: #007bff;
+            &::after{                             
+                transform: rotate(45deg);
+                background: #fff;
+            }
+            &::before{               
+                transform: rotate(-45deg);
+                background: #fff;            }
+        }
+
+    }
+
+    .button--line-blue{
+        border: 1px solid #007bff;
+        color: #007bff;
+        background: #fff;
+        font-size: 1.1rem;
+        padding: .4rem 2.8rem 0.4rem 1rem;
+        &::after{
+            content:'';
+            position: absolute;
+            top: 45%;
+            right: 6%;
+            width: 10px;
+            height: 2px;
+            transform: rotate(-45deg);
+            background: #007bff;
+        }
+        &::before{
+            content:'';
+            position: absolute;
+            top: 45%;
+            right: 10%;
+            width: 10px;
+            height: 2px;
+            transform: rotate(45deg);
+            background: #007bff;
+        }
+        // &:hover{
+        //   background: #007bff;
+        //   color: #fff;
+        // }
+        &:focus{
+            box-shadow: 1px -1px 4px 1px rgba(0, 123, 255, 0.3);
+
+        }
+    }
+
+    &-settings-list{
+        margin-top: .85rem;
+        font-size: 1.1rem;
+        &__item{
+            padding-left: 1.5rem;
+            &:first-child::after{
+                content:'|';
+                position: absolute;
+                top: 0%;
+                right: -4%;
+               
+            }
+        }
+        &__link{
+            position: relative;
+            &:hover:after{
+                width: 100%;
+            }
+            &:after{
+                content:'';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: #007bff;
+                transition: width .5s ease-in;
+            }
+            
+        }
+        
+    }
+    
+}

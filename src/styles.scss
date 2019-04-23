@@ -6,7 +6,6 @@ body{
 // __________ GRID ______________
 .container{
     max-width: 1280px;
-    outline: 1px solid red;
     padding: 0 4.5rem;
 }
 // __________ LIST ______________
@@ -42,14 +41,20 @@ body{
     background: #2F52AD;
 }
 
+
+// __________ SVG ______________
+svg {
+    fill: currentColor;
+}
+
 .icon--sm>svg{
     width: 16px;
     height: 16px;
 }
 
-// __________ SVG ______________
-svg {
-    fill: currentColor;
+.icon--md>svg{
+    width: 22px;
+    height: 22px;
 }
 // __________ BTN ______________
 .button{

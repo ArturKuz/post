@@ -156,7 +156,33 @@
 // @media (min-width: 576px) and (max-width: 767px) { ... }
 
 // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) and (max-width: 991px) { ... }
+@media (min-width: 768px) and (max-width: 991px) { 
+    .page{
+        &__title{
+            padding: 2.8rem 1rem .5rem;
+        }
+        &-drop-menu{    
+            
+          &__list{
+            bottom: -138px;
+          }
+        }
+        &-cards{
+            &-item:nth-child(n){
+                margin-top: 1rem;
+            }
+            &-item--lg {        
+                 flex-basis: 100%; 
+            }
+            &-item--sm{
+                flex-basis: 49%
+            }
+            &-item__descr{
+                padding: 1.4rem 1rem;
+            }
+        }
+    }
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) { 

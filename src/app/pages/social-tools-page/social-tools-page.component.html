@@ -4,7 +4,10 @@
     <h1 class="page__title">Social Tools</h1>
   </div>
 
-  <div class="col-lg-7 col-xl-5 d-flex flex-column align-content-end pt-4">
+  <div class="col-lg-7 col-xl-5 
+    d-flex flex-row-reverse justify-content-between
+    flex-lg-column align-content-lg-end justify-content-lg-start pt-lg-4"
+  >
     <div class="page-drop-menu text-right" [ngClass]="{'open': isShowDropMenu}">
       <button class=" button button--line-blue position-relative" (click)="showDropMenu()">Current profile</button>
       <ul class="page-drop-menu__list list">

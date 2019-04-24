@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src:url("/assets/fonts/ProximaNova-Regular.eot?") format("eot"),
+    url("/assets/fonts/ProximaNova-Regular.woff") format("woff"),
+    url("/assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  }
+
 // __________ NORMOLIZE _________
 body{
-//  font-family: 'Courier New', Courier, monospace;
+ font-family: "ProximaNova-Regular";
 }
 
 // __________ GRID ______________

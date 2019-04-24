@@ -42,7 +42,10 @@ body{
 }
 
 
-// __________ SVG ______________
+// __________ SVG IMG______________
+// img{
+//     width: 100%;
+// }
 svg {
     fill: currentColor;
 }
@@ -71,6 +74,13 @@ svg {
         box-shadow: none;
         border: none;
         background: transparent;
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { 
+    .container{
+        padding: 0 1rem;
     }
 }
 // Medium devices (tablets, 768px and up)

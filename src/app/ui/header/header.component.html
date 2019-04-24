@@ -1,19 +1,54 @@
 <header class="header container">
   <section class="row justify-content-between">
-    <nav class="nav-top col-12 col-sm-12 col-lg-9 col-xl-6 d-flex align-items-center justify-content-between ">
-      <a class="nav-top__item" routerLink="/">
-        <img class="nav-top__item-img" src="/assets/img/logo.png" alt="logo">
+    <nav class="nav-top col-12 col-sm-12 col-lg-9 
+                d-flex flex-wrap
+                justify-content-between 
+                justify-content-lg-start "
+      [ngClass]="{'open': isShowMenu}"
+    >
+
+      <a class="nav-top__logo" routerLink="/">
+        <img class="nav-top__logo-img" src="/assets/img/logo.png" alt="logo">
       </a>
-      <a class="nav-top__item link" routerLink="/dashboard" routerLinkActive="active"
-        [routerLinkActiveOptions]="{exact: true}">Dashboard</a>
-      <a class="nav-top__item link" routerLink="/analytics" routerLinkActive="active">Analytics</a>
-      <a class="nav-top__item link" routerLink="/tools" routerLinkActive="active">Social Tools</a>
-      <a class="nav-top__item link" routerLink="/administration" routerLinkActive="active">Administration</a>
-      <a class="nav-top__item link" routerLink="/home" routerLinkActive="active">Po.st Home</a>
+
+      <button role="button" aria-label="Menu Button" class="nav-top__burger button" (click)="showMenu()">
+        <span class="nav-top__burger-line nav-top__burger-line--upper"></span>
+        <span class="nav-top__burger-line nav-top__burger-line--lower"></span>
+      </button>
+
+      <ul class="nav-top__list list">
+        <li class="nav-top__list-item">
+          <a class="nav-top__list-link link" routerLink="/dashboard" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-top__list-item">
+          <a class="nav-top__list-link link" routerLink="/analytics" routerLinkActive="active">
+            Analytics
+          </a>
+        </li>
+        <li class="nav-top__list-item">
+          <a class="nav-top__list-link link" routerLink="/tools" routerLinkActive="active">
+            Social Tools
+          </a>
+        </li>
+        <li class="nav-top__list-item">
+          <a class="nav-top__list-link link" routerLink="/administration" routerLinkActive="active">
+            Administration
+          </a>
+        </li>
+        <li class="nav-top__list-item">
+          <a class="nav-top__list-link link" routerLink="/home" routerLinkActive="active">
+            Po.st Home
+          </a>
+        </li>
+      </ul>
     </nav>
+
     <div class="menu col-12 col-sm-12 col-lg-3 col-xl-3 
-    d-flex flex-row-reverse justify-content-between
-    flex-lg-column justify-content-lg-around"
+                d-flex flex-row-reverse justify-content-between
+                flex-lg-column justify-content-lg-around"
     >
       <ul class="menu__setings list d-flex justify-content-end">
         <li class="menu__setings-item">

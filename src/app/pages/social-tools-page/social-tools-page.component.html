@@ -5,10 +5,10 @@
   </div>
 
   <div class="col-lg-7 col-xl-5 
-    d-flex flex-row-reverse justify-content-between
+    d-flex flex-row-reverse justify-content-between flex-wrap
     flex-lg-column align-content-lg-end justify-content-lg-start pt-lg-4"
   >
-    <div class="page-drop-menu text-right" [ngClass]="{'open': isShowDropMenu}">
+    <div class="page-drop-menu text-right order-1 order-sm-0" [ngClass]="{'open': isShowDropMenu}">
       <button class=" button button--line-blue position-relative" (click)="showDropMenu()">Current profile</button>
       <ul class="page-drop-menu__list list">
         <li class="page-drop-menu__list-item">
@@ -23,7 +23,7 @@
       </ul>
     </div>
 
-    <ul class="page-settings-list list d-flex justify-content-end">
+    <ul class="page-settings-list list d-flex justify-content-end  order-0 order-sm-1">
       <li class="page-settings-list__item position-relative">
         <a class="page-settings-list__link" routerLink="/">
           <span class="icon--sm" [inlineSVG]="'/assets/svg/settings.svg'"></span>
@@ -40,8 +40,8 @@
   </div>
 
   <div class="col-12">
-    <div class="page-cards d-flex flex-wrap justify-content-between">
-      <div class="page-cards-item page-cards-item--lg border d-flex">
+    <div class="page-cards d-flex flex-sm-wrap justify-content-between">
+      <div class="page-cards-item page-cards-item--lg border d-flex flex-column flex-md-row">
         <article class="page-cards-item__descr d-flex flex-column justify-content-between">
           <div class="page-cards-item__descr-info">
             <h2 class="t--title-sm"> Sharing Buttons </h2>
@@ -52,7 +52,7 @@
           <a class="button btn btn-light-green" routerLink="/">Set up and activate</a>
         </article>
         <figure class="page-cards-item__media">
-          <img src="./assets/img/img1.png" alt="Sharing Buttons">
+          <img class="page-cards-item__media-img" src="./assets/img/img1.png" alt="Sharing Buttons">
         </figure>
       </div>
       <div class="page-cards-item page-cards-item--sm border d-flex">
@@ -68,7 +68,7 @@
           <a class="button btn btn-light-green" routerLink="/">Set up and activate</a>
         </article>
         <figure class="page-cards-item__media">
-          <img src="./assets/img/img2.png" alt="Floating Sharing Buttons">
+          <img class="page-cards-item__media-img" src="./assets/img/img2.png" alt="Floating Sharing Buttons">
         </figure>
       </div>
       <div class="page-cards-item page-cards-item--sm border d-flex">
@@ -85,7 +85,7 @@
           <a class="button btn btn-light-green" routerLink="/">Set up and activate</a>
         </article>
         <figure class="page-cards-item__media">
-          <img src="./assets/img/img3.png" alt="Post Lite">
+          <img class="page-cards-item__media-img" src="./assets/img/img3.png" alt="Post Lite">
         </figure>
       </div>
       <div class="page-cards-item page-cards-item--sm border d-flex">
@@ -101,7 +101,7 @@
           <a class="button btn btn-light-green" routerLink="/">Set up and activate</a>
         </article>
         <figure class="page-cards-item__media">
-          <img src="./assets/img/img4.png" alt="Native Sharing Buttons">
+          <img class="page-cards-item__media-img" src="./assets/img/img4.png" alt="Native Sharing Buttons">
         </figure>
       </div>
       <div class="page-cards-item page-cards-item--sm border d-flex">
@@ -117,7 +117,7 @@
           <a class="button btn btn-light-green" routerLink="/">Set up and activate</a>
         </article>
         <figure class="page-cards-item__media">
-          <img src="./assets/img/img5.png" alt="Newsletter Sharing Buttons">
+          <img class="page-cards-item__media-img" src="./assets/img/img5.png" alt="Newsletter Sharing Buttons">
         </figure>
       </div>
     </div>
